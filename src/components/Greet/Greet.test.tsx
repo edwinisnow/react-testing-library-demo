@@ -5,7 +5,7 @@ describe("Greet", () => {
   test("renders correctly", () => {
     render(<Greet />);
     //   const textElement = screen.getByText(/hello/i);
-    const textElement = screen.getByText("Hello");
+    const textElement = screen.getByText(/Hello/);
     expect(textElement).toBeInTheDocument();
   });
 
